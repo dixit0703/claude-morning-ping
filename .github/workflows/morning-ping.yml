@@ -1,15 +1,15 @@
 # Starts the 5-hour Claude usage window every morning.
 # Goes in the repo at: .github/workflows/morning-ping.yml
 #
-# GitHub schedules use UTC. 01:50 UTC = 07:20 IST.
+# GitHub schedules use UTC. 03:20 UTC = 08:50 IST.
 # GitHub often starts scheduled jobs a few minutes late,
-# so this usually lands between about 07:20 and 07:35 IST.
+# so this usually lands between about 08:50 and 09:05 IST.
 
 name: Morning Claude ping
 
 on:
   schedule:
-    - cron: "50 1 * * *"
+    - cron: "20 3 * * *"
   workflow_dispatch: # lets you run it by hand from the Actions tab to test
 
 permissions:
